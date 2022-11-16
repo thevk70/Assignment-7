@@ -124,23 +124,27 @@
 // #include <stdio.h>
 // int main()
 // {
-//     int i, a, count;
-//     printf("Prime numbers under 100 are : \n");
-//     for (i = 1; i < 3; i++)
+//   int i, a = 1, count; 
+//   while(a <= 100)
+//   {
+//     count = 0;
+//     i = 2;
+//     while(i <= a/2)
 //     {
-//         count = 0;
-//         for (a = 1; a <= i; a++)
-//         {
-//             if (i % a == 0)
-//             {
-//                 count++;
-//             }
-//         }
-//         printf("c=%d\n", count);
-//         if (count == 2)
-//             printf("%d\t", i);
+//       if(a%i == 0)
+//       {
+//         count++;
+// 	break;
+//       }
+//       i++;	
+//     }	
+//     if(count == 0 && a != 1 )
+//     {
+// 	printf(" %d ", a);
 //     }
-//     return 0;
+//     a++; 
+//   }
+//   return 0;
 // }
 
 // 7. Write a program to print all Prime numbers between two given numbers

@@ -261,4 +261,22 @@
 // }
 
 // 11. Write a program to find the position of first 1 in LSB.
-
+// #include <stdio.h>
+// int main()
+// {
+//     int n = 8, count = 0;
+//     while (n != 0)
+//     {
+//         count++;
+//         if (n & 1 == 1)
+//         {
+//             break;
+//         }
+//         else
+//         {
+//             n = n >> 1;
+//         }
+//     }
+//     printf("%d", count);
+//     return 0;
+// }
